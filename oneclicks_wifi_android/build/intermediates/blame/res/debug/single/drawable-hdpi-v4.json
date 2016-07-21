@@ -20,12 +20,12 @@
         "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/drawable-hdpi/logo1.png"
     },
     {
-        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/drawable-hdpi-v4/btn_style_zero_focused.9.png",
-        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/drawable-hdpi/btn_style_zero_focused.9.png"
-    },
-    {
         "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_preference_pressed.9.png",
         "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/drawable-hdpi/ic_preference_pressed.9.png"
+    },
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/drawable-hdpi-v4/btn_style_zero_focused.9.png",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/drawable-hdpi/btn_style_zero_focused.9.png"
     },
     {
         "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/drawable-hdpi-v4/button_main.png",
@@ -84,12 +84,12 @@
         "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/drawable-hdpi/ic_preference_last_normal.9.png"
     },
     {
-        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/drawable-hdpi-v4/mm_submenu_pressed.png",
-        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/drawable-hdpi/mm_submenu_pressed.png"
-    },
-    {
         "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/drawable-hdpi-v4/back.png",
         "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/drawable-hdpi/back.png"
+    },
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/drawable-hdpi-v4/mm_submenu_pressed.png",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/drawable-hdpi/mm_submenu_pressed.png"
     },
     {
         "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/drawable-hdpi-v4/recent_chat_showright_normal.png",

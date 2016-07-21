@@ -4,51 +4,29 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="740903279433916"
-    verifier="COMPATIBLE" >
+    timestamp="743571356056742" >
 
     <task
         name="javac"
-        duration="38" />
+        duration="231" />
     <task
         name="instant-run-dex"
-        duration="507" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="6" />
+        duration="133" />
     <task
         name="verifier"
-        duration="1" />
+        duration="22" />
 
     <artifact
-        location="/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/outputs/apk/oneclicks_wifi_android-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="740278645800276" >
+    <build timestamp="743571356056742" >
         <artifact
             location="/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/outputs/apk/oneclicks_wifi_android-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="740793365161902"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/builds/debug/740793365161902/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="740864619621605"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/builds/debug/740864619621605/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="740903279433916"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

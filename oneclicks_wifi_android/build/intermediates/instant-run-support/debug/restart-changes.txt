@@ -1,8 +1,0 @@
-CHANGED,/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/cn/oneclicks/wifi_school/connection_ways/CMCC_EDU_ZJ.class
-CHANGED,/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/cn/oneclicks/wifi/MainTab01.class
-CHANGED,/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/cn/oneclicks/wifi/MainTab01$4.class
-CHANGED,/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/cn/oneclicks/wifi/Setting$3$1.class
-CHANGED,/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/cn/oneclicks/wifi/Setting_User.class
-CHANGED,/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/cn/oneclicks/wifi/Setting_School$1.class
-CHANGED,/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/cn/oneclicks/wifi/Setting$3.class
-CHANGED,/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/cn/oneclicks/wifi_school/HttpUtil.class
