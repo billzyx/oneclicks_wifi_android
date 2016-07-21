@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/debug/jniLibs"/></dataSet></merger>

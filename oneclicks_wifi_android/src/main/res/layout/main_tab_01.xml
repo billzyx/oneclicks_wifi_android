@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_main_weixin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_main"
+    android:orientation="vertical" >
+    
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        >
+
+    <ImageButton
+        android:id="@+id/imageButton_connect_wifi"
+        android:layout_width="250dip"
+        android:layout_height="250dip"
+        android:layout_marginTop="70dip"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:layout_centerHorizontal  ="true"  
+        android:src="@drawable/button_main" />
+    
+    <ProgressBar  
+    android:id="@+id/progressBar1"
+    android:layout_width="wrap_content"
+    android:visibility="gone"  
+    android:layout_height="wrap_content" 
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_marginTop="10dip"
+    android:layout_below="@id/imageButton_connect_wifi"  
+    android:layout_centerHorizontal  ="true"  
+    android:indeterminateDrawable="@drawable/progress_small"/> 
+    
+     <Button
+        android:id="@+id/button_logout"
+        android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:text="下线"
+         android:visibility="gone" 
+         android:layout_marginTop="12dip"
+   		 android:layout_below="@id/imageButton_connect_wifi"  
+         android:layout_centerHorizontal  ="true"  
+         android:onClick="button_logout"
+        >       
+    </Button>  
+    
+    </RelativeLayout>
+
+</LinearLayout>

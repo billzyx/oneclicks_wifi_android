@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/setting_school.xml",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/setting_school.xml"
+    },
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/main_tab_03.xml",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/main_tab_03.xml"
+    },
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/school_list.xml",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/school_list.xml"
+    },
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/setting_user.xml",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/setting_user.xml"
+    },
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/right_menu.xml",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/right_menu.xml"
+    },
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/left_menu.xml",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/left_menu.xml"
+    },
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/slidingmenumain.xml",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/exploded-aar/oneclicks_wifi_android/slidingmenu_library/unspecified/res/layout/slidingmenumain.xml"
+    },
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/right_menu_frame.xml",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/right_menu_frame.xml"
+    },
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/left_menu_frame.xml",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/left_menu_frame.xml"
+    },
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/setting.xml",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/setting.xml"
+    },
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/setting_wifi.xml",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/setting_wifi.xml"
+    },
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/main_tab_01.xml",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/main_tab_01.xml"
+    },
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/shan.xml",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/shan.xml"
+    },
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/main_tab_02.xml",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/main_tab_02.xml"
+    },
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/activity_main.xml"
+    }
+]

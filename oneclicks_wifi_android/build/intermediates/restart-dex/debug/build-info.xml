@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="740903279433916"
+    verifier="COMPATIBLE" >
+
+    <task
+        name="javac"
+        duration="38" />
+    <task
+        name="instant-run-dex"
+        duration="507" />
+    <task
+        name="instant-run-transform"
+        duration="6" />
+    <task
+        name="verifier"
+        duration="1" />
+
+    <artifact
+        location="/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
+
+    <build timestamp="740278645800276" >
+        <artifact
+            location="/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/outputs/apk/oneclicks_wifi_android-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="740793365161902"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/builds/debug/740793365161902/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="740864619621605"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/builds/debug/740864619621605/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="740903279433916"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+
+</instant-run>

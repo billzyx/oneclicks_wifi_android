@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">一点wifi</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string-array name="wifi_school_item">  
+        <item>CMCC-EDU</item>  
+        <item>CMXY-XS</item>  
+        <item>CMXY-JS</item>  
+        <item>CMXY-GRS</item>  
+    </string-array>  
+
+</resources>

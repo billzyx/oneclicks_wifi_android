@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#ffbd5b" >
+    
+		    <ImageButton
+		            android:id="@+id/id_setting_back"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="3dp"
+		            android:onClick="back"
+		            android:background="@drawable/back" />
+		
+		        <TextView
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:gravity="center"
+		            android:text="上网帐号"
+		            android:textColor="#fff"
+		            android:textSize="20sp"
+		            android:textStyle="bold" />
+
+       </RelativeLayout>
+       
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dip" 
+        android:layout_marginRight="20dip">
+       
+	    <RelativeLayout
+	        android:id="@+id/SettingUser_layout1"
+	        android:layout_width="match_parent"
+	        android:layout_height="150dip" >
+	       
+			       <TextView   
+			        android:id="@+id/loginUI_Label"   
+			        android:layout_width="fill_parent"   
+			        android:layout_height="wrap_content"   
+			        android:layout_alignParentLeft="true"  
+			        android:layout_alignParentTop="true"  
+			        android:text="校园网帐号"  
+			        android:textSize="10pt"  
+			        />   
+			    <EditText  
+			        android:id="@+id/loginUsername"   
+			        android:layout_width="fill_parent"   
+			        android:layout_height="wrap_content"  
+			        android:layout_below="@id/loginUI_Label"    
+			        android:paddingLeft="60dip"/>  
+			    <TextView android:id="@+id/loginUsername_Label"   
+			        android:layout_width="wrap_content"   
+			        android:layout_height="wrap_content"   
+			         android:layout_alignLeft="@id/loginUsername"  
+			        android:layout_alignTop="@id/loginUsername"  
+			        android:layout_marginTop="10dip"  
+			        android:layout_marginLeft="5dip"  
+			        android:text="用户名"  
+			    />  
+			    <EditText  
+			        android:id="@+id/loginPassword"   
+			        android:layout_below="@id/loginUsername"  
+			        android:layout_width="fill_parent"   
+			        android:layout_height="wrap_content"  
+			        android:password="true"   
+			        android:paddingLeft="55dip"  
+			        />  
+			     <TextView android:id="@+id/loginPassword_Label"   
+			        android:layout_width="wrap_content"   
+			        android:layout_height="wrap_content"   
+			         android:layout_alignLeft="@id/loginPassword"  
+			        android:layout_alignTop="@id/loginPassword"  
+			        android:layout_marginTop="10dip"  
+			        android:layout_marginLeft="5dip"  
+			        android:text="密码"  
+			    />  
+			    
+			     
+	        
+	      </RelativeLayout>
+	      
+	    <RelativeLayout
+	        android:id="@+id/SettingUser_layout2"
+	        android:layout_width="match_parent"
+	        android:layout_height="150dip" >
+	       
+			     <TextView   
+			        android:id="@+id/loginUI_Label2"   
+			        android:layout_width="fill_parent"   
+			        android:layout_height="wrap_content"   
+			        android:layout_alignParentLeft="true"  
+			        android:layout_alignParentTop="true"  
+			        android:text="运营商帐号"  
+			        android:textSize="10pt"  
+			        />   
+			    <EditText  
+			        android:id="@+id/loginUsername2"   
+			        android:layout_width="fill_parent"   
+			        android:layout_height="wrap_content"  
+			        android:layout_below="@id/loginUI_Label2"    
+			        android:paddingLeft="60dip"/>  
+			    <TextView android:id="@+id/loginUsername_Label2"   
+			        android:layout_width="wrap_content"   
+			        android:layout_height="wrap_content"   
+			        android:layout_alignLeft="@id/loginUsername2"  
+			        android:layout_alignTop="@id/loginUsername2"  
+			        android:layout_marginTop="10dip"  
+			        android:layout_marginLeft="5dip"  
+			        android:text="用户名"  
+			    />  
+			    <EditText  
+			        android:id="@+id/loginPassword2"   
+			        android:layout_below="@id/loginUsername2"  
+			        android:layout_width="fill_parent"   
+			        android:layout_height="wrap_content"  
+			        android:password="true"   
+			        android:paddingLeft="55dip"  
+			        />  
+			     <TextView android:id="@+id/loginPassword_Label2"   
+			        android:layout_width="wrap_content"   
+			        android:layout_height="wrap_content"   
+			         android:layout_alignLeft="@id/loginPassword2"  
+			        android:layout_alignTop="@id/loginPassword2"  
+			        android:layout_marginTop="10dip"  
+			        android:layout_marginLeft="5dip"  
+			        android:text="密码"  
+			    />  
+	      </RelativeLayout>
+      
+    			<Button
+    			    android:id="@+id/loginBtn"
+    			    android:layout_width="match_parent"
+    			    android:layout_height="wrap_content"
+    			    android:onClick="loginBtn_Click"
+    			    android:text="保存" />
+    </LinearLayout>		
+
+</LinearLayout>

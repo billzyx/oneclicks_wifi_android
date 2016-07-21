@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#ffbd5b" >
+
+        <ImageButton
+            android:id="@+id/id_setting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/back"
+            android:onClick="back" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="校园网设置"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+            </RelativeLayout>
+            
+        <LinearLayout style="@style/wrap_layout" >
+        <!-- 上圆角-->
+        <LinearLayout
+            android:id="@+id/id_LinearLayout_setting_school"
+             style="@style/top_layout">
+            <TextView style="@style/usertext" android:text="学校设置" />
+              <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        
+        <!-- 分割线 -->
+          <View style="@style/bg_line"/>
+          <!-- 无圆角-->
+       <LinearLayout
+           android:id="@+id/id_LinearLayout_setting_wifi"
+            style="@style/mid_layout">
+            <TextView style="@style/usertext" android:text="热点设置" />
+              <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+             <View style="@style/bg_line"/>
+          <!-- 下圆角-->
+       <LinearLayout
+           android:id="@+id/id_LinearLayout_setting_user"
+            style="@style/bottom_layout">
+            <TextView style="@style/usertext" android:text="上网帐号" />
+              <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+             
+    </LinearLayout>
+
+    
+     <!-- 全圆角-->
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout style="@style/single_layout">
+            <TextView style="@style/usertext" android:text="辅助功能"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+
+</LinearLayout>
