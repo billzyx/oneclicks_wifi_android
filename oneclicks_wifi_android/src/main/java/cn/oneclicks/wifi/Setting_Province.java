@@ -34,7 +34,7 @@ public class Setting_Province extends Activity {
         proivnces = new SchoolWifiManager().getProvinceList();
         school_listview = (ListView) findViewById(R.id.school_listview);//得到ListView对象的引用 /*为ListView设置Adapter来绑定数据*/
         school_listview.setAdapter(new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, proivnces));
+                R.layout.list_item_1, proivnces));
         school_listview.setOnItemClickListener(itemClickListener);
     }
 

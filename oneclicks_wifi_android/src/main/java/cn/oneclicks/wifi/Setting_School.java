@@ -39,7 +39,7 @@ public class Setting_School extends Activity {
 		schools = new SchoolWifiManager().getProvinceSchoolList(province);
 		school_listview = (ListView) findViewById(R.id.school_listview);//得到ListView对象的引用 /*为ListView设置Adapter来绑定数据*/
 		school_listview.setAdapter(new ArrayAdapter<String>(this,
-		                android.R.layout.simple_list_item_1, schools));
+		                R.layout.list_item_1, schools));
 		school_listview.setOnItemClickListener(itemClickListener);
 	}
 	
