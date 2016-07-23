@@ -43,9 +43,7 @@ public class Setting extends Activity {
 		findViewById(R.id.id_LinearLayout_setting_school)
 		.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-//				Toast.makeText(getApplicationContext(), "暂时仅支持浙江传媒学院！",
-//					     Toast.LENGTH_SHORT).show();
-				Intent intent = new Intent(Setting.this,Setting_School.class); 
+				Intent intent = new Intent(Setting.this,Setting_Province.class);
 				startActivity(intent);
 				
 		  }

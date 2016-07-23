@@ -39,17 +39,40 @@ public class SchoolWifiManager {
 //		HashMap<String, HashMap<String, String[]>> map = getAllSchoolHashMap();
 //		return map.get(school);
 //	}
+
+
+	public List<String> getProvinceList(){
+		List<String> s = new ArrayList<String>();
+
+		Cursor cursor = schoolDB.rawQuery("select province_name from province",null);
+		while(cursor.moveToNext())
+		{
+			s.add(cursor.getString(cursor.getColumnIndex("province_name")));
+		}
+		cursor.close();
+		return s;
+	}
 	
 	public List<String> getSchoolList()
 	{
 		List<String> s = new ArrayList<String>();
-//		Iterator i = getAllSchoolHashMap().entrySet().iterator();  
-//		while(i.hasNext()){  
-//			Map.Entry entry = (Map.Entry) i.next();
-//			s.add((String) entry.getKey());
-//		}
+
 		
 		Cursor cursor = schoolDB.rawQuery("select school_name from school",null);
+		while(cursor.moveToNext())
+		{
+			s.add(cursor.getString(cursor.getColumnIndex("school_name")));
+		}
+		cursor.close();
+		return s;
+	}
+
+	public List<String> getProvinceSchoolList(String province)
+	{
+		List<String> s = new ArrayList<String>();
+
+
+		Cursor cursor = schoolDB.rawQuery("select school_name from school where province = ?",new String[]{province});
 		while(cursor.moveToNext())
 		{
 			s.add(cursor.getString(cursor.getColumnIndex("school_name")));

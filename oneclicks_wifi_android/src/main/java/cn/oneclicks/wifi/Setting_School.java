@@ -32,7 +32,11 @@ public class Setting_School extends Activity {
 	
 	void init()
 	{
-		schools = new SchoolWifiManager().getSchoolList();
+		Bundle b = getIntent().getExtras();
+		String province = "";
+		if(b != null)
+			province = b.getString("province");
+		schools = new SchoolWifiManager().getProvinceSchoolList(province);
 		school_listview = (ListView) findViewById(R.id.school_listview);//得到ListView对象的引用 /*为ListView设置Adapter来绑定数据*/
 		school_listview.setAdapter(new ArrayAdapter<String>(this,
 		                android.R.layout.simple_list_item_1, schools));
@@ -43,11 +47,13 @@ public class Setting_School extends Activity {
 
 		@Override
 		public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
-			String s= schools.toArray()[position].toString();
-			SchoolWifiManager.setSchool_user(s);
-    		Toast.makeText(getApplicationContext(), "设置成功！",
-    			     Toast.LENGTH_SHORT).show();
-    		finish();
+        String s= schools.toArray()[position].toString();
+        SchoolWifiManager.setSchool_user(s);
+        Toast.makeText(getApplicationContext(), "设置成功！",
+                 Toast.LENGTH_SHORT).show();
+        Intent intent = getIntent();
+        setResult(RESULT_OK, intent);
+        finish();
 		}
 	};
 	

@@ -46,6 +46,8 @@
             android:theme="@android:style/Theme.NoTitleBar"></activity>
         <activity android:name="Setting_School"
             android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity android:name=".Setting_Province"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
     </application>
    
 </manifest>

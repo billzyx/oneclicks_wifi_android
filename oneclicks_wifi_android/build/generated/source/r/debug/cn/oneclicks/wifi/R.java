@@ -374,11 +374,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int right_menu_frame=0x7f030007;
         public static final int school_list=0x7f030008;
         public static final int setting=0x7f030009;
-        public static final int setting_school=0x7f03000a;
-        public static final int setting_user=0x7f03000b;
-        public static final int setting_wifi=0x7f03000c;
-        public static final int shan=0x7f03000d;
-        public static final int slidingmenumain=0x7f03000e;
+        public static final int setting_province=0x7f03000a;
+        public static final int setting_school=0x7f03000b;
+        public static final int setting_user=0x7f03000c;
+        public static final int setting_wifi=0x7f03000d;
+        public static final int shan=0x7f03000e;
+        public static final int slidingmenumain=0x7f03000f;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;

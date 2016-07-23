@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:2:1-51:12
+ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:2:1-53:12
 	package
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml
@@ -61,7 +61,7 @@ ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_a
 	android:name
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:21:9-62
 application
-ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:24:5-49:19
+ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:24:5-51:19
 	android:label
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:27:9-41
 	android:allowBackup
@@ -116,3 +116,9 @@ ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_a
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:48:13-60
 	android:name
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:47:19-48
+activity#cn.oneclicks.wifi.Setting_Province
+ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:49:9-50:72
+	android:theme
+		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:50:13-60
+	android:name
+		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:49:19-51
