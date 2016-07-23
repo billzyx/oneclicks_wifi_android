@@ -23,22 +23,8 @@ import cn.oneclicks.wifi.WifiAdmin;
 import cn.oneclicks.wifi_school.connection_ways.*;
 
 public class SchoolWifiManager {
-	
-//	private HashMap<String, HashMap<String, String[]>> getAllSchoolHashMap()
-//	{
-//		HashMap<String, HashMap<String, String[]>> map = new HashMap<String, HashMap<String, String[]>>();
-//		//热点记录格式：key1：学校名，key2：(key1:热点SSID,key2:(认证模式1，认证模式n))
-//		map.put("浙江传媒学院", new HashMap<String, String[]>(){{put("CMCC-EDU",new String[]{"H3C_2014","CMCC_EDU_ZJ"});put("CMXY-XS",new String[]{"H3C_2014"});put("CMXY-JS",new String[]{"H3C_2014"});put("CMXY-GRS",new String[]{"H3C_2014"});}});
-//		
-//		
-//		return map;
-//	}
-	
-//	private  HashMap<String, String[]> getSchoolWifiHashMap(String school)
-//	{
-//		HashMap<String, HashMap<String, String[]>> map = getAllSchoolHashMap();
-//		return map.get(school);
-//	}
+
+
 
 
 	public List<String> getProvinceList(){
