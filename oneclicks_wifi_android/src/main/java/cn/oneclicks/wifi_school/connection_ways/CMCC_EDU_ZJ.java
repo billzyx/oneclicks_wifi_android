@@ -94,7 +94,7 @@ public class CMCC_EDU_ZJ implements ConnectionWays{
 		}
 	}
 	
-	public void logout()
+	public boolean logout()
 	{
 		HashMap<String, String> postmap = new HashMap<String, String>();
 		postmap.put("wlanUserIp", wlanuserip);
@@ -103,7 +103,10 @@ public class CMCC_EDU_ZJ implements ConnectionWays{
 		postmap.put("passType", "1");
 		postmap.put("isLocalUser", "1");
 		postmap.put("userName", username);
-		HttpUtil.post(server + "/zmcc/portalLogout.wlan?isCloseWindow=N&" + logincode, postmap);
+		if(HttpUtil.post(server + "/zmcc/portalLogout.wlan?isCloseWindow=N&" + logincode, postmap) != null)
+            return true;
+        else
+            return false;
 	}
 	
 	void SaveServer()

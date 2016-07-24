@@ -103,6 +103,11 @@ public class MainTab01 extends Fragment
                 {
             		button_logout.setVisibility(View.VISIBLE);
                 }
+                if(msg.what == 5)//下线失败
+                {
+                    Toast.makeText(getActivity().getApplicationContext(), "下线失败！",
+                            Toast.LENGTH_SHORT).show();
+                }
             }  
         }; 
 		
@@ -126,13 +131,16 @@ public class MainTab01 extends Fragment
 	            	Message m = new Message();   
 	                try {  
 	                	SchoolWifiManager sc = new SchoolWifiManager();
-	        			sc.logout();
-	        			m.what = 3;  
+	        			if(sc.logout())
+	        			    m.what = 3;
+                        else
+                            m.what = 5;
 	                    handler.sendMessage(m);  
 	                } catch (Exception e) {  
-	                    e.printStackTrace(); 
-	                    
-	                }  
+	                    e.printStackTrace();
+                        m.what = 5;
+                        handler.sendMessage(m);
+                    }
 	                
 	            }  
 	        }).start(); 
@@ -142,7 +150,7 @@ public class MainTab01 extends Fragment
 	
     void imageButton_connect_wifi()
 	{
-    	if(button_logout.getVisibility()==0)
+    	if(button_logout.getVisibility()==View.VISIBLE)
     	{
     		Toast.makeText(getActivity().getApplicationContext(), "你已经在线！",
 					     Toast.LENGTH_SHORT).show();

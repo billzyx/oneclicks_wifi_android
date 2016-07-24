@@ -60,10 +60,12 @@ public class H3C_2014 implements ConnectionWays{
 		}
 	}
 	
-	public void logout()
+	public boolean logout()
 	{
-		HttpUtil.post( server + "/portal/pws?t=lo", null);
-		Log.v("logout","1");
+		if(HttpUtil.post( server + "/portal/pws?t=lo", null) != null)
+            return true;
+        else
+            return false;
 	}
 	
 	void SaveServer()

@@ -209,15 +209,15 @@ public class SchoolWifiManager {
 		return true;
 	}
 	
-	public void logout()
+	public boolean logout()
 	{
 		if(school==null||school.equalsIgnoreCase(""))
-			return;
+			return false;
 		if(getWifiName().equalsIgnoreCase(""))
-			return;
+			return false;
 		String[] WifiPortal = getSchoolWifiPortal(school,getWifiName());
 		if(WifiPortal==null)
-			return;
+			return false;
 		swap(WifiPortal);
 		for(String Portal : WifiPortal)
 		{
@@ -231,6 +231,7 @@ public class SchoolWifiManager {
 		        }catch(Exception e){
 		            e.printStackTrace();
 		            Log.v("logout","0");
+                    return false;
 		        }
 			
 //			ConnectionWays sc;
@@ -240,6 +241,7 @@ public class SchoolWifiManager {
 			
 					
 		}
+        return true;
 	}
 	
 	private void swap(String strs[]) {

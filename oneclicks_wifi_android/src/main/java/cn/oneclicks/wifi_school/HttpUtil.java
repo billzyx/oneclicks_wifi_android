@@ -44,11 +44,11 @@ public class HttpUtil {
      * Your header of http op
      */ 
     static { 
-        headers[0] = new BasicHeader("Pragma", "no-cache"); 
-        headers[1] = new BasicHeader("Accept", "text/plain, */*; q=0.01"); 
-        headers[2] = new BasicHeader("Accept-Encoding", "gzip, deflate"); 
-        headers[3] = new BasicHeader("Accept-Language", "zh-CN"); 
-        headers[4] = new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko"); 
+        getHeaders()[0] = new BasicHeader("Pragma", "no-cache");
+        getHeaders()[1] = new BasicHeader("Accept", "text/plain, */*; q=0.01");
+        getHeaders()[2] = new BasicHeader("Accept-Encoding", "gzip, deflate");
+        getHeaders()[3] = new BasicHeader("Accept-Language", "zh-CN");
+        getHeaders()[4] = new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko");
    
         
  
@@ -99,7 +99,7 @@ public class HttpUtil {
         client.getParams().setParameter(CoreConnectionPNames.SO_TIMEOUT, TIMEOUT); 
         HttpPost post = new HttpPost(url); 
         Log.i(TAG, url); 
-        post.setHeaders(headers); 
+        post.setHeaders(getHeaders());
         String result = "404error"; 
         ArrayList<BasicNameValuePair> pairList = new ArrayList<BasicNameValuePair>(); 
         if (map != null) { 
@@ -151,8 +151,8 @@ public class HttpUtil {
             con.setRequestProperty("Connection", "Keep-Alive"); 
             con.setRequestProperty("Charset", "UTF-8"); 
             con.setRequestProperty("Content-Type", "text/html"); 
-            String cookie = headers[10].getValue(); 
-            if (!isNull(headers[10].getValue())) { 
+            String cookie = getHeaders()[10].getValue();
+            if (!isNull(getHeaders()[10].getValue())) {
                 con.setRequestProperty("cookie", cookie); 
             } 
              
@@ -194,7 +194,7 @@ public class HttpUtil {
     private static void setCookie(HttpResponse response) { 
         if (response.getHeaders("Set-Cookie").length > 0) { 
             Log.d(TAG, response.getHeaders("Set-Cookie")[0].getValue()); 
-            headers[10] = new BasicHeader("Cookie", 
+            getHeaders()[10] = new BasicHeader("Cookie",
                     response.getHeaders("Set-Cookie")[0].getValue()); 
         } 
     } 
@@ -229,6 +229,13 @@ public class HttpUtil {
             return false; 
         } 
     }
-    
-   
-} 
+
+
+    public static Header[] getHeaders() {
+        return headers;
+    }
+
+    public static void setHeaders(Header[] headers) {
+        HttpUtil.headers = headers;
+    }
+}
