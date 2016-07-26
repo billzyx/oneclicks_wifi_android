@@ -2,10 +2,12 @@
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/tv"
     android:textColor="@color/black"
-    android:padding="21sp"
+    android:padding="16sp"
     android:layout_width="fill_parent"
     android:background="#fff"
-    android:singleLine="true"
     android:gravity="center"
     android:layout_height="fill_parent"
-    android:textSize="18sp"/>
+    android:textSize="18sp"
+    android:layout_marginRight="3sp"
+    android:layout_marginLeft="3sp"
+    />

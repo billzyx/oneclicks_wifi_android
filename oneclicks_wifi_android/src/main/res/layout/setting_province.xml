@@ -30,8 +30,12 @@
 		            android:textStyle="bold" />
 
        </RelativeLayout>
-       
-    	
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff"
+        >
 
     	    <ListView
     	        android:id="@+id/school_listview"
@@ -39,8 +43,13 @@
 		        android:layout_height="match_parent"
 		        android:textAlignment="center"
                 android:background="@color/white"
+                android:dividerHeight="1sp"
+                android:divider="#ccc"
+                android:layout_marginRight="20sp"
+                android:layout_marginLeft="20sp"
+                android:scrollbars="none"
 
-		        />
-    	
+                />
+    </RelativeLayout>
 
 </LinearLayout>
