@@ -24,6 +24,10 @@
         "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/drawable/bg_layout_shape.xml"
     },
     {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/drawable/logo.jpg",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/drawable/logo.jpg"
+    },
+    {
         "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/drawable/settings_nomal_item.xml",
         "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/drawable/settings_nomal_item.xml"
     },

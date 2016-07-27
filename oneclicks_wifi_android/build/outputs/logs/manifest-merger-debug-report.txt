@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:2:1-53:12
+ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:2:1-55:12
 	package
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml
@@ -61,7 +61,7 @@ ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_a
 	android:name
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:21:9-62
 application
-ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:24:5-51:19
+ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:24:5-53:19
 	android:label
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:27:9-41
 	android:allowBackup
@@ -122,3 +122,9 @@ ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_a
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:50:13-60
 	android:name
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:49:19-51
+activity#cn.oneclicks.wifi.About
+ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:51:9-52:78
+	android:theme
+		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:52:19-66
+	android:name
+		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:51:19-40

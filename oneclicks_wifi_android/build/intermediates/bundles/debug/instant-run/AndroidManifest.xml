@@ -53,6 +53,9 @@
         <activity
             android:name="cn.oneclicks.wifi.Setting_Province"
             android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cn.oneclicks.wifi.About"
+            android:theme="@android:style/Theme.NoTitleBar" />
     </application>
 
 </manifest>

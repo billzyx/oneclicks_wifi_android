@@ -57,7 +57,8 @@ public class MenuLeftFragment extends Fragment
 						Intent intent = new Intent(getActivity(),Setting.class); 
 						MenuLeftFragment.this.startActivity(intent);
 					} break;
-					case 1:{} break;
+					case 1:{Intent intent = new Intent(getActivity(),About.class);
+                        MenuLeftFragment.this.startActivity(intent);} break;
 				}
 				
 			}

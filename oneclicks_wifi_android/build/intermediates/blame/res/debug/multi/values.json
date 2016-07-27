@@ -2992,9 +2992,28 @@
                     "startLine": 165,
                     "startColumn": 4,
                     "startOffset": 7984,
-                    "endLine": 171,
+                    "endColumn": 64,
+                    "endOffset": 8044
+                },
+                "from": {
+                    "file": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/generated/res/resValues/debug/values/generated.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 151,
+                        "endColumn": 64,
+                        "endOffset": 211
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 166,
+                    "startColumn": 4,
+                    "startOffset": 8049,
+                    "endLine": 172,
                     "endColumn": 12,
-                    "endOffset": 8270
+                    "endOffset": 8335
                 },
                 "from": {
                     "file": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/values/styles.xml",
@@ -3010,12 +3029,12 @@
             },
             {
                 "to": {
-                    "startLine": 172,
+                    "startLine": 173,
                     "startColumn": 4,
-                    "startOffset": 8275,
-                    "endLine": 174,
+                    "startOffset": 8340,
+                    "endLine": 175,
                     "endColumn": 12,
-                    "endOffset": 8430
+                    "endOffset": 8495
                 },
                 "from": {
                     "file": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/values/styles.xml",
@@ -3031,12 +3050,12 @@
             },
             {
                 "to": {
-                    "startLine": 175,
+                    "startLine": 176,
                     "startColumn": 4,
-                    "startOffset": 8435,
-                    "endLine": 187,
+                    "startOffset": 8500,
+                    "endLine": 188,
                     "endColumn": 12,
-                    "endOffset": 9123
+                    "endOffset": 9188
                 },
                 "from": {
                     "file": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/values/styles.xml",
@@ -3052,12 +3071,12 @@
             },
             {
                 "to": {
-                    "startLine": 188,
+                    "startLine": 189,
                     "startColumn": 4,
-                    "startOffset": 9128,
-                    "endLine": 192,
+                    "startOffset": 9193,
+                    "endLine": 193,
                     "endColumn": 12,
-                    "endOffset": 9344
+                    "endOffset": 9409
                 },
                 "from": {
                     "file": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/values/styles.xml",
@@ -3073,12 +3092,12 @@
             },
             {
                 "to": {
-                    "startLine": 193,
+                    "startLine": 194,
                     "startColumn": 4,
-                    "startOffset": 9349,
-                    "endLine": 195,
+                    "startOffset": 9414,
+                    "endLine": 196,
                     "endColumn": 12,
-                    "endOffset": 9493
+                    "endOffset": 9558
                 },
                 "from": {
                     "file": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/values/styles.xml",
@@ -3094,12 +3113,12 @@
             },
             {
                 "to": {
-                    "startLine": 196,
+                    "startLine": 197,
                     "startColumn": 4,
-                    "startOffset": 9498,
-                    "endLine": 201,
+                    "startOffset": 9563,
+                    "endLine": 202,
                     "endColumn": 12,
-                    "endOffset": 9733
+                    "endOffset": 9798
                 },
                 "from": {
                     "file": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/values/styles.xml",
@@ -3115,12 +3134,12 @@
             },
             {
                 "to": {
-                    "startLine": 202,
+                    "startLine": 203,
                     "startColumn": 4,
-                    "startOffset": 9738,
-                    "endLine": 204,
+                    "startOffset": 9803,
+                    "endLine": 205,
                     "endColumn": 12,
-                    "endOffset": 9875
+                    "endOffset": 9940
                 },
                 "from": {
                     "file": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/values/styles.xml",
@@ -3136,12 +3155,12 @@
             },
             {
                 "to": {
-                    "startLine": 205,
+                    "startLine": 206,
                     "startColumn": 4,
-                    "startOffset": 9880,
-                    "endLine": 207,
+                    "startOffset": 9945,
+                    "endLine": 208,
                     "endColumn": 12,
-                    "endOffset": 10022
+                    "endOffset": 10087
                 },
                 "from": {
                     "file": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/values/styles.xml",
@@ -3157,12 +3176,12 @@
             },
             {
                 "to": {
-                    "startLine": 208,
+                    "startLine": 209,
                     "startColumn": 4,
-                    "startOffset": 10027,
-                    "endLine": 210,
+                    "startOffset": 10092,
+                    "endLine": 211,
                     "endColumn": 12,
-                    "endOffset": 10171
+                    "endOffset": 10236
                 },
                 "from": {
                     "file": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/values/styles.xml",
@@ -3178,12 +3197,12 @@
             },
             {
                 "to": {
-                    "startLine": 211,
+                    "startLine": 212,
                     "startColumn": 4,
-                    "startOffset": 10176,
-                    "endLine": 217,
+                    "startOffset": 10241,
+                    "endLine": 218,
                     "endColumn": 12,
-                    "endOffset": 10501
+                    "endOffset": 10566
                 },
                 "from": {
                     "file": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/values/styles.xml",
@@ -3199,12 +3218,12 @@
             },
             {
                 "to": {
-                    "startLine": 218,
+                    "startLine": 219,
                     "startColumn": 4,
-                    "startOffset": 10506,
-                    "endLine": 228,
+                    "startOffset": 10571,
+                    "endLine": 229,
                     "endColumn": 12,
-                    "endOffset": 11037
+                    "endOffset": 11102
                 },
                 "from": {
                     "file": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/values/styles.xml",
