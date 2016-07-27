@@ -6,7 +6,7 @@ ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_a
 		INJECTED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml
 		INJECTED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:5:5-30
+		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:5:5-32
 		INJECTED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml
 		INJECTED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml
 	android:versionCode
