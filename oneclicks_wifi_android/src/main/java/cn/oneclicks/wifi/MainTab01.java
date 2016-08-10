@@ -1,10 +1,5 @@
 package cn.oneclicks.wifi;
 
-import java.util.List;
-
-import cn.oneclicks.wifi_school.SchoolWifiManager;
-import cn.oneclicks.wifi_school.connection_ways.H3C_2014;
-
 import android.app.Service;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -24,6 +19,10 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import java.util.List;
+
+import cn.oneclicks.wifi_school.SchoolWifiManager;
 
 public class MainTab01 extends Fragment
 {

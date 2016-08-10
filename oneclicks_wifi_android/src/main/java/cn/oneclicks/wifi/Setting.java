@@ -2,22 +2,19 @@ package cn.oneclicks.wifi;
 
 
 
-import java.util.List;
-
-import cn.oneclicks.wifi_school.SchoolWifiManager;
-import android.R.layout;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-
 import android.os.Bundle;
-
-
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
+
+import java.util.List;
+
+import cn.oneclicks.wifi_school.SchoolWifiManager;
 
 
 
@@ -96,6 +93,19 @@ public class Setting extends Activity {
 	                        }).show();  
 		  }
 		 });
+
+        findViewById(R.id.id_LinearLayout_setting_auxiliary)
+                .setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+//                        Intent intent = new Intent(Setting.this,Browser.class);
+//                        Bundle b = new Bundle();
+//                        b.putString("sUrl","http://wifi.oneclicks.cn/test/getpost.html");
+//                        intent.putExtras(b);
+//                        startActivity(intent);
+                        Intent intent = new Intent(Setting.this,Auxiliary.class);
+                        startActivity(intent);
+                    }
+                });
 	}
 
 	

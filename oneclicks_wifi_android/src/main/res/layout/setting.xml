@@ -64,7 +64,8 @@
     
      <!-- 全圆角-->
     <LinearLayout style="@style/wrap_layout">
-        <LinearLayout style="@style/single_layout">
+        <LinearLayout style="@style/single_layout"
+                      android:id="@+id/id_LinearLayout_setting_auxiliary">
             <TextView style="@style/usertext" android:text="辅助功能"/>
             <ImageView style="@style/img_arrow"/>
         </LinearLayout>

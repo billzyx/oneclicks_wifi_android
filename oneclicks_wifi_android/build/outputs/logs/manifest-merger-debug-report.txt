@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:2:1-55:12
+ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:2:1-72:12
 	package
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml
@@ -18,6 +18,7 @@ ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_a
 uses-sdk
 ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:9:5-11:41
 MERGED from [oneclicks_wifi_android:slidingmenu_library:unspecified] /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/exploded-aar/oneclicks_wifi_android/slidingmenu_library/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [oneclicks_wifi_android:AdvancedWebView:unspecified] /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/exploded-aar/oneclicks_wifi_android/AdvancedWebView/unspecified/AndroidManifest.xml:5:5-7:41
 	android:targetSdkVersion
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:11:9-38
 		INJECTED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml
@@ -61,7 +62,8 @@ ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_a
 	android:name
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:21:9-62
 application
-ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:24:5-53:19
+ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:24:5-70:19
+MERGED from [oneclicks_wifi_android:AdvancedWebView:unspecified] /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/exploded-aar/oneclicks_wifi_android/AdvancedWebView/unspecified/AndroidManifest.xml:9:5-20
 	android:label
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:27:9-41
 	android:allowBackup
@@ -128,3 +130,37 @@ ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_a
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:52:19-66
 	android:name
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:51:19-40
+activity#cn.oneclicks.wifi.Browser
+ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:53:9-54:78
+	android:theme
+		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:54:19-66
+	android:name
+		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:53:19-42
+activity#cn.oneclicks.wifi.Auxiliary
+ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:55:9-56:78
+	android:theme
+		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:56:19-66
+	android:name
+		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:55:19-44
+activity#cn.oneclicks.wifi.CaptureInfo
+ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:57:9-58:78
+	android:theme
+		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:58:19-66
+	android:name
+		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:57:19-46
+provider#android.support.v4.content.FileProvider
+ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:61:9-69:20
+	android:authorities
+		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:63:13-65
+	android:grantUriPermissions
+		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:65:13-47
+	android:exported
+		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:64:13-37
+	android:name
+		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:62:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:66:13-68:54
+	android:resource
+		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:68:17-51
+	android:name
+		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:67:17-67

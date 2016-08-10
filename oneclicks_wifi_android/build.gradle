@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
+    compileSdkVersion 21
     buildToolsVersion "23.0.3"
 
     defaultConfig {
@@ -27,4 +27,5 @@ android {
 
 dependencies {
     compile project(':slidingmenu_library')
+    compile project(path: ':AdvancedWebView')
 }

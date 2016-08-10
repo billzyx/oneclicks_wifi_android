@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#ffbd5b" >
+
+        <ImageButton
+            android:id="@+id/id_setting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:onClick="back"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="新学校支持请求"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="下一步"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:onClick="button_nextstep"
+            android:layout_marginRight="10dp"
+            android:id="@+id/captureinfo_ok"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:id="@+id/captureinfo_textView_maintext"/>
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="100dp"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/captureinfo_textView_warning"/>
+
+        <RelativeLayout
+            android:id="@+id/captureinfo_layout_school_province"
+            android:layout_width="match_parent"
+            android:layout_height="150dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            >
+
+
+            <EditText
+                android:id="@+id/captureinfo_school"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="60dip"/>
+            <TextView android:id="@+id/captureinfo_school_Label"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignLeft="@id/captureinfo_school"
+                      android:layout_alignTop="@id/captureinfo_school"
+                      android:layout_marginTop="10dip"
+                      android:layout_marginLeft="5dip"
+                      android:text="学校"
+                      android:textColor="@color/black"
+                />
+            <EditText
+                android:id="@+id/captureinfo_province"
+                android:layout_below="@id/captureinfo_school"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="55dip"
+                />
+            <TextView android:id="@+id/captureinfo_province_Label"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignLeft="@id/captureinfo_province"
+                      android:layout_alignTop="@id/captureinfo_province"
+                      android:layout_marginTop="10dip"
+                      android:layout_marginLeft="5dip"
+                      android:text="省份"
+                      android:textColor="@color/black"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重新发送"
+                android:visibility="gone"
+                android:layout_below="@id/captureinfo_province"
+                android:onClick="button_resend"
+                android:id="@+id/captureinfo_button_resend"/>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
