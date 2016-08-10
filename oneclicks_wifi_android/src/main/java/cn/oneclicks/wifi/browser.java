@@ -210,7 +210,7 @@ public class Browser extends Activity implements AdvancedWebView.Listener{
             TextView browser_message_textview = (TextView) findViewById(R.id.browser_message_textview);
             String info = infos.get(infoStep);
             browser_message_textview.setText(info);
-            preSaveStringBuilder.append(info);
+            preSaveFile(info);
             infoStep++;
         }
     }

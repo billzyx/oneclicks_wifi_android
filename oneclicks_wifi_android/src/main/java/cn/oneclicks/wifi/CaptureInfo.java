@@ -3,8 +3,9 @@ package cn.oneclicks.wifi;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.content.FileProvider;
+import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,9 +14,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -84,12 +87,27 @@ public class CaptureInfo extends Activity {
                 String province = provinceEditText.getText().toString();
                 saveFileProvinceAndSchool(school,province);
 
+                File sdCard = Environment.getExternalStorageDirectory();
+                File dir = new File (sdCard.getAbsolutePath() + "/oneclickswifi");
+                dir.mkdirs();
+                File file = new File(dir, "package.txt");
+
+                try {
+                    copyFile(new File(getApplicationContext().getFilesDir() + File.separator + "package.txt"),file);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+
+
                 Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("message/rfc822");
                 i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"wifi@oneclicks.cn"});
                 i.putExtra(Intent.EXTRA_SUBJECT, school + "请求适配");
                 i.putExtra(Intent.EXTRA_TEXT   , "本人请求一点wifi适配" + school + "(所在省份:" + province + ")" + "的连接方式。授权一点wifi使用我的校园网帐号用于开发测试用途。");
-                i.putExtra(Intent.EXTRA_STREAM, FileProvider.getUriForFile(getApplicationContext(), "cn.oneclicks.wifi.fileprovider", new File(getApplicationContext().getFilesDir() + File.separator + "package.txt")));
+                i.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(file));
 
                 try {
                     startActivity(Intent.createChooser(i, "Send mail..."));
@@ -150,7 +168,7 @@ public class CaptureInfo extends Activity {
     }
 
     private void saveFileProvinceAndSchool(String school,String province){
-        String s = school + province + "\n\n";
+        String s = school + "," + province + "\n\n";
         FileOutputStream fOut = null;
         try {
             fOut = openFileOutput("package.txt", Context.MODE_APPEND);
@@ -160,6 +178,23 @@ public class CaptureInfo extends Activity {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    public void copyFile(File src, File dst) throws IOException
+    {
+        FileChannel inChannel = new FileInputStream(src).getChannel();
+        FileChannel outChannel = new FileOutputStream(dst).getChannel();
+        try
+        {
+            inChannel.transferTo(0, inChannel.size(), outChannel);
+        }
+        finally
+        {
+            if (inChannel != null)
+                inChannel.close();
+            if (outChannel != null)
+                outChannel.close();
         }
     }
 
