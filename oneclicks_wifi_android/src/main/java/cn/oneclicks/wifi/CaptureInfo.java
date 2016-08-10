@@ -138,14 +138,14 @@ public class CaptureInfo extends Activity {
                             "请点击下线按钮",
                             "请正常输入帐号但输入错误的密码并点击登录")));
             b.putBoolean("requireComplete",true);
-            b.putString("sUrl","http://wifi.oneclicks.cn/");
+            b.putString("sUrl","http://wifi.oneclicks.cn/capture/firstlayer.html");
             intent.putExtras(b);
             startActivityForResult(intent,0);
         }else if(recordStep == 2){
             Intent intent = new Intent(CaptureInfo.this,Browser.class);
             Bundle b = new Bundle();
             b.putStringArrayList("infos",new ArrayList<String>
-                    (Arrays.asList("请继续完成登录（直至第二层登录完成）",
+                    (Arrays.asList("请继续完成登录（直至第二层登录完成）（第一层登完请先点击返回）",
                             "请点击下线按钮",
                             "请正常输入帐号但输入错误的密码并点击登录")));
             b.putBoolean("requireComplete",true);
