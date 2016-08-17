@@ -75,7 +75,7 @@ public class Setting extends Activity {
 				 final String[] items =   (String[])wifi_list.toArray(new String[size]);
 						 
 				 Log.v("school_wifi",items[0]);
-	                new AlertDialog.Builder(Setting.this)  
+	                new AlertDialog.Builder(Setting.this,android.R.style.Theme_DeviceDefault_Light_Dialog)
 	                        .setTitle("请点击选择")  
 	                        .setItems(items, new DialogInterface.OnClickListener() {  
 	  

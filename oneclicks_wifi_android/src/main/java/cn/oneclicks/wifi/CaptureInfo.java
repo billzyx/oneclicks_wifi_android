@@ -135,7 +135,7 @@ public class CaptureInfo extends Activity {
             Bundle b = new Bundle();
             b.putStringArrayList("infos",new ArrayList<String>
                     (Arrays.asList("请完成校园网登录。",
-                            "请点击下线按钮",
+                            "请等待10秒后点击下线按钮",
                             "请正常输入帐号但输入错误的密码并点击登录")));
             b.putBoolean("requireComplete",true);
             b.putString("sUrl","http://wifi.oneclicks.cn/capture/firstlayer.html");
