@@ -40,12 +40,12 @@
         "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/left_menu_frame.xml"
     },
     {
-        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/setting.xml",
-        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/setting.xml"
-    },
-    {
         "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/browser.xml",
         "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/browser.xml"
+    },
+    {
+        "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/setting.xml",
+        "source": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/res/layout/setting.xml"
     },
     {
         "merged": "/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/intermediates/res/merged/debug/layout/setting_wifi.xml",

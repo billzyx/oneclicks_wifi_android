@@ -59,7 +59,7 @@ uses-permission#android.permission.VIBRATE
 ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:19:5-82
 	android:name
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:19:22-63
-instrumentation#android.test.InstrumentationTestRunner
+instrumentation
 ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:21:5-23:53
 	android:targetPackage
 		ADDED from /Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/src/main/AndroidManifest.xml:23:9-50

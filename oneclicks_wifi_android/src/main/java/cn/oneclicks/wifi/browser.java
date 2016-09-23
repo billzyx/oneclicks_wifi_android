@@ -203,6 +203,8 @@ public class Browser extends Activity implements AdvancedWebView.Listener{
     private void preSaveFile(String html) {
         preSaveStringBuilder.append(html);
         preSaveStringBuilder.append("\n\n");
+        preSaveStringBuilder.append("***********************************");
+        preSaveStringBuilder.append("\n\n");
     }
 
     private void nextInfoStep(){

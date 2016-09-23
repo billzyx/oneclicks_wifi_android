@@ -159,6 +159,9 @@ public class CaptureInfo extends Activity {
         FileOutputStream fOut = null;
         try {
             fOut = openFileOutput("package.txt", Context.MODE_PRIVATE);
+            WifiAdmin wifiAdmin = new WifiAdmin(MyApplication.getContext());
+            String ssid = "SSID:" + wifiAdmin.getWifiInfo().getSSID() + "\n\n";
+            fOut.write(ssid.getBytes());
             fOut.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();

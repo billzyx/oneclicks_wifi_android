@@ -1,7 +1,5 @@
 package cn.oneclicks.wifi;
 
-import java.util.List;
-
 import android.content.Context;
 import android.net.DhcpInfo;
 import android.net.wifi.ScanResult;
@@ -10,6 +8,8 @@ import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.net.wifi.WifiManager.WifiLock;
 import android.util.Log;
+
+import java.util.List;
  
 public class WifiAdmin {
  
@@ -25,7 +25,9 @@ public class WifiAdmin {
         mWifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
         mWifiInfo = mWifiManager.getConnectionInfo();
     }
- 
+
+
+
     public boolean openWifi() {//打开wifi
         if (!mWifiManager.isWifiEnabled()) {
             Log.i(TAG, "setWifiEnabled.....");
