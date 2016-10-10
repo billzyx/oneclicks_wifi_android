@@ -1,26 +1,21 @@
 package cn.oneclicks.wifi_school;
 
-import java.lang.reflect.Method;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.wifi.WifiInfo;
 import android.util.Log;
+
+import java.lang.reflect.Method;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+
 import cn.oneclicks.wifi.AssetsDatabaseManager;
 import cn.oneclicks.wifi.MyApplication;
 import cn.oneclicks.wifi.WifiAdmin;
-import cn.oneclicks.wifi_school.connection_ways.*;
+import cn.oneclicks.wifi_school.connection_ways.ConnectionWays;
 
 public class SchoolWifiManager {
 
@@ -172,6 +167,8 @@ public class SchoolWifiManager {
 		String type = getSchoolWifiType(school,getWifiName());
 		if(WifiPortal==null)
 			return false;
+        if(WifiPortal[0].equals(""))
+            return false;
 		int i = 0;
 		for(String Portal : WifiPortal)
 		{
@@ -218,6 +215,8 @@ public class SchoolWifiManager {
 		String[] WifiPortal = getSchoolWifiPortal(school,getWifiName());
 		if(WifiPortal==null)
 			return false;
+        if(WifiPortal[0].equals(""))
+            return false;
 		swap(WifiPortal);
 		for(String Portal : WifiPortal)
 		{
