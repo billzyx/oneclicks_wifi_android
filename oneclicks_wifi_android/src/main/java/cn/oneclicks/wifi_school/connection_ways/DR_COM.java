@@ -3,12 +3,18 @@ package cn.oneclicks.wifi_school.connection_ways;
 import android.content.SharedPreferences;
 import android.util.Log;
 
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.HashMap;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 import cn.oneclicks.wifi.MyApplication;
 import cn.oneclicks.wifi_school.HttpUtil;
+import cn.oneclicks.wifi_school.StreamTool;
 
 /**
  * Created by tianwai on 23/09/2016.
@@ -43,9 +49,17 @@ public class DR_COM implements ConnectionWays {
         postmap.put("0MKKey","");
         HttpUtil hp = new HttpUtil();
         String re = hp.post(url, postmap);
+//        try {
+//            re = new String(re.getBytes("gb2312"),"utf-8");
+//        } catch (UnsupportedEncodingException e) {
+//            e.printStackTrace();
+//        }
         Log.v("postback", re);
         SaveServer();
-        if(!re.contains("成功"))
+        if(re.contains("Msg=01")){
+            return false;
+        }
+        else if(re.contains(username))
         {
             return true;
         }
@@ -58,10 +72,36 @@ public class DR_COM implements ConnectionWays {
 
     @Override
     public boolean logout() {
-        if(HttpUtil.post( server + "/F.htm", null) != null)
-            return true;
-        else
-            return false;
+//        Log.v("logout", "start啊");
+//
+//        String re = HttpUtil.post( server + "/F.htm", null) ;
+//        //Log.v("postback", re);
+//        if(re != null){
+//            try {
+//                re = new String(re.getBytes("gb2312"),"utf-8");
+//                Log.v("postback", re);
+//                return true;
+//            } catch (UnsupportedEncodingException e) {
+//                e.printStackTrace();
+//            }
+//            return false;
+//        }
+//        else
+//            return false;
+        try {
+            URL url = new URL( server + "/F.htm");
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setConnectTimeout(5 * 1000);
+            conn.setConnectTimeout(5 * 1000);
+            conn.setRequestMethod("GET");
+            InputStream inStream = conn.getInputStream();
+            byte[] data = StreamTool.inputStream2Byte(inStream);
+            String result = new String(data, "UTF-8");
+            Log.v("postback", result);
+            return result.contains("Msg=14");
+        }catch (Exception e){
+            return  false;
+        }
     }
 
     void SaveServer()

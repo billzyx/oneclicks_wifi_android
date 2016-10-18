@@ -36,7 +36,7 @@ import android.widget.Toast;
  */ 
 public class HttpUtil { 
  
-    private static Header[] headers = new BasicHeader[5]; 
+    private static Header[] headers = new BasicHeader[5];
     private static String TAG = "HTTPUTIL"; 
     private static int TIMEOUT =  10*1000; 
  
@@ -45,11 +45,12 @@ public class HttpUtil {
      */ 
     static { 
         getHeaders()[0] = new BasicHeader("Pragma", "no-cache");
-        getHeaders()[1] = new BasicHeader("Accept", "text/plain, */*; q=0.01");
+        getHeaders()[1] = new BasicHeader("Accept", "text/html, application/xhtml+xml, */*");
         getHeaders()[2] = new BasicHeader("Accept-Encoding", "gzip, deflate");
         getHeaders()[3] = new BasicHeader("Accept-Language", "zh-CN");
         getHeaders()[4] = new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko");
-   
+
+
         
  
     } 

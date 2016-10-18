@@ -170,6 +170,7 @@ public class SchoolWifiManager {
         if(WifiPortal[0].equals(""))
             return false;
 		int i = 0;
+		boolean result = false;
 		for(String Portal : WifiPortal)
 		{
 			i++;
@@ -180,15 +181,15 @@ public class SchoolWifiManager {
 	            sc=(ConnectionWays)Class.forName("cn.oneclicks.wifi_school.connection_ways." + Portal).newInstance();
 	            Method m = sc.getClass().getDeclaredMethod("login",new Class[]{String.class,String.class,String.class});
 	            if(type.equalsIgnoreCase("1"))
-	            	m.invoke(sc,new Object[] {getWifiName(),getUserName(),getPassword()});
+	            	result= (boolean) m.invoke(sc,new Object[] {getWifiName(),getUserName(),getPassword()});
 	            else if(type.equalsIgnoreCase("2"))
-	            	m.invoke(sc,new Object[] {getWifiName(),getUserName2(),getPassword2()});
+	            	result = (boolean) m.invoke(sc,new Object[] {getWifiName(),getUserName2(),getPassword2()});
 	            else if(type.equalsIgnoreCase("3"))
 	            {
 	            	if(i==1)
-	            		m.invoke(sc,new Object[] {getWifiName(),getUserName(),getPassword()});
+	            		result = (boolean) m.invoke(sc,new Object[] {getWifiName(),getUserName(),getPassword()});
 	            	else if(i==2)
-	            		m.invoke(sc,new Object[] {getWifiName(),getUserName2(),getPassword2()});
+	            		result = (boolean) m.invoke(sc,new Object[] {getWifiName(),getUserName2(),getPassword2()});
 	            }
 	        }catch(Exception e){
 	            e.printStackTrace();
@@ -203,11 +204,12 @@ public class SchoolWifiManager {
 			
 			//else {return false;}		
 		}
-		return true;
+		return result;
 	}
 	
 	public boolean logout()
 	{
+
 		if(school==null||school.equalsIgnoreCase(""))
 			return false;
 		if(getWifiName().equalsIgnoreCase(""))
@@ -220,13 +222,15 @@ public class SchoolWifiManager {
 		swap(WifiPortal);
 		for(String Portal : WifiPortal)
 		{
+			Log.v("logout","-1");
 			if(Portal==null)
-				break;
+				continue;
 			ConnectionWays sc;
 			 try{
 		            sc=(ConnectionWays)Class.forName("cn.oneclicks.wifi_school.connection_ways." + Portal).newInstance();
 		            Method m = sc.getClass().getDeclaredMethod("logout");
 		            m.invoke(sc);
+				   Log.v("logout","1");
 		        }catch(Exception e){
 		            e.printStackTrace();
 		            Log.v("logout","0");
