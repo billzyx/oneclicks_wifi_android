@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    api-level="19"
-    density="xhdpi"
+    abi="x86"
+    api-level="23"
+    density="xxhdpi"
     format="8"
-    plugin-version="2.2.0"
-    timestamp="4522056769728"
+    plugin-version="2.2.1"
+    timestamp="4458056444114"
     token="315310497179391391"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="1018" />
+        duration="2416" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="47" />
+        duration="552" />
     <task
         name="verifier"
-        duration="52" />
+        duration="47" />
 
     <artifact
         location="/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/outputs/apk/oneclicks_wifi_android-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="4522056769728"
+        timestamp="4458056444114"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/tianwai/StudioProjects/oneclicks_wifi_android/oneclicks_wifi_android/build/outputs/apk/oneclicks_wifi_android-debug.apk"
