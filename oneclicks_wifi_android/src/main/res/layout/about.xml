@@ -72,6 +72,7 @@
             android:layout_width="60sp"
             android:layout_height="15sp"
             android:text="一点wifi官网"
+            android:clickable="true"
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
             android:textSize="10sp"
