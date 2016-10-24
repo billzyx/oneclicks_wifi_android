@@ -3,14 +3,10 @@ package cn.oneclicks.wifi_school.connection_ways;
 import android.content.SharedPreferences;
 import android.util.Log;
 
-import java.io.UnsupportedEncodingException;
+import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.HashMap;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 
 import cn.oneclicks.wifi.MyApplication;
 import cn.oneclicks.wifi_school.HttpUtil;
@@ -20,24 +16,15 @@ import cn.oneclicks.wifi_school.StreamTool;
  * Created by tianwai on 23/09/2016.
  */
 
-public class DR_COM implements ConnectionWays {
+public class DR_COM extends CommonConnectionUtil implements ConnectionWays {
     @Override
     public boolean login(String WifiName, String username, String password) {
-        String urlStr = "http://www.baidu.com";
-        URL url1;
-        String urlUI = "";
-        try
-        {
-            url1 = new URL(urlStr);
-            HttpURLConnection conn = (HttpURLConnection) url1.openConnection();
-            conn.getResponseCode();
-            urlUI = conn.getURL().toString();
-        }
-        catch (Exception e) {
 
-            e.printStackTrace();
+        String urlUI = super.checkPortalState();
+        if(urlUI.equals("-1"))
             return false;
-        }
+        if(urlUI.equals(""))
+            return true;
 
         server = "http://" + urlUI.split("//")[1].split("/")[0];
 
