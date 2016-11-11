@@ -107,6 +107,12 @@ public class MainTab01 extends Fragment
                     Toast.makeText(getActivity().getApplicationContext(), "下线失败！",
                             Toast.LENGTH_SHORT).show();
                 }
+                if(msg.what == 6)//连接超时
+                {
+                    Toast.makeText(getActivity().getApplicationContext(), "连接超时！",
+                            Toast.LENGTH_SHORT).show();
+                    mybar1.setVisibility(View.GONE);
+                }
             }  
         }; 
 		
@@ -201,7 +207,32 @@ public class MainTab01 extends Fragment
 				return;
 			}
 			mybar1.setVisibility(View.VISIBLE);
-			login();
+
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    WifiAdmin wifi = new WifiAdmin(getActivity());
+                    int i = 0;
+                    Message m = new Message();
+                    while(!wifi.getSSID().equalsIgnoreCase("\""+getWifiName()+"\"")){
+                        try {
+                            Thread.sleep(500);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }finally {
+                            i++;
+                        }
+                        if(i>=20){
+                            m.what = 6;  //连接超时
+                            handler.sendMessage(m);
+                            break;
+                        }
+                    }
+                    if(i<20)
+                        login();
+                }
+            }).start();
+
 			
 		}
 		

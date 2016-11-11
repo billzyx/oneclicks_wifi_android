@@ -124,6 +124,10 @@ public class WifiAdmin {
     public String getBSSID() {
         return (mWifiInfo == null) ? "NULL" : mWifiInfo.getBSSID();
     }
+
+    public String getSSID() {
+        return (mWifiInfo == null) ? "NULL" : mWifiInfo.getSSID();
+    }
  
     public DhcpInfo getDhcpInfo() {
         return dhcpInfo = mWifiManager.getDhcpInfo();
